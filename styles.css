@@ -1,6 +1,7 @@
-.desktop-nav {
+.desktop-nav ul {
   display: flex;
   justify-content: left;
+  list-style: none;
   gap: 20px;
   font-size: 1rem;
   color: silver;
