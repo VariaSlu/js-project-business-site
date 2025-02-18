@@ -13,19 +13,36 @@
 </head>
 
 <body>
-    <nav class="desktop-nav"> <!-- Hidden on mobile -->
+    <!-- <nav class="desktop-nav"> 
         <h1> Tarot for Developers </h1>
-        <ul>
+        <ul class="mobile-nav" id="mobile-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="hamburger-menu">☰</div> <!-- Visible on mobile -->
+    <div class="hamburger-menu" id="hamburger-menu">☰</div>  -->
+
+    <header>
+        <nav class="desktop-nav"> <!-- Hidden on mobile -->
+            <h1>Tarot for Developers</h1>
+            <ul class="nav-links"> <!-- Keep desktop links separate -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="hamburger-menu" class="hamburger-menu">☰</div>
+
+        <ul id="mobile-nav" class="mobile-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </header>
-
-
 
     <main>
 
@@ -35,7 +52,7 @@
 
         <section class="tarot-spread">
             <article class="card">
-                <h2>The Commit</h2>
+                <h3>The Commit</h3>
                 <p>Stability, confidence, and pushing code that you think is bug-free.</p>
                 <div class="card-description">A moment of clarity when you finally commit your code—but beware, for what
                     is done cannot be undone (unless you force push).</div>
@@ -43,35 +60,35 @@
             </article>
 
             <article class="card">
-                <h2>The Merge Conflict</h2>
+                <h3>The Merge Conflict</h3>
                 <p>Chaos, miscommunication, and the battle between multiple branches.</p>
             </article>
 
             <article class="card">
-                <h2>The Infinite Loop</h2>
+                <h3>The Infinite Loop</h3>
                 <p>Repetition, getting stuck, and debugging late into the night.</p>
             </article>
             <article class="card">
-                <h2>The 404</h2>
+                <h3>The 404</h3>
                 <p>Lost direction, confusion, and missing information.</p>
             </article>
 
             <article class="card">
-                <h2>The Rubber Duck</h2>
+                <h3>The Rubber Duck</h3>
                 <p>Clarity, self-reflection, and debugging through explanation.</p>
             </article>
 
             <article class="card">
-                <h2>The Stack Overflow</h2>
+                <h3>The Stack Overflow</h3>
                 <p>Knowledge, wisdom, and the power of community.</p>
             </article>
             <article class="card">
-                <h2>The Deprecation</h2>
+                <h3>The Deprecation</h3>
                 <p>Change, evolution, and letting go of the past.</p>
             </article>
 
             <article class="card">
-                <h2>The Feature Creep</h2>
+                <h3>The Feature Creep</h3>
                 <p>Ambition, scope expansion, and never-ending requirements.</p>
             </article>
 
@@ -88,6 +105,10 @@
                             <span class="custom-radio"></span> <!-- Fixed class name -->
                         </label>
                         <label class="radiobutton-container"> 4
+                            <input type="radio" name="answer">
+                            <span class="custom-radio"></span>
+                        </label>
+                        <label class="radiobutton-container"> 6
                             <input type="radio" name="answer">
                             <span class="custom-radio"></span>
                         </label>
@@ -118,6 +139,10 @@
     <footer class="site-footer">
         <p>© 2025 New reading</p>
     </footer>
+
+    <script src="script.js"></script>
+
+
 </body>
 
 </html>
