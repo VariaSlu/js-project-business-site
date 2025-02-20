@@ -94,7 +94,7 @@
 
         </section>
 
-        <form class="tarot-form">
+        <form class="tarot-form" action="http://httpbin.org/anything" method="post">
             <fieldset class="fieldset">
                 <legend>ask-the-cards</legend>
                 <div class="wrapper-col">
@@ -102,7 +102,7 @@
                     <div class="wrapper-row">
                         <label class="radiobutton-container"> 1
                             <input type="radio" name="answer" checked>
-                            <span class="custom-radio"></span> <!-- Fixed class name -->
+                            <span class="custom-radio"></span>
                         </label>
                         <label class="radiobutton-container"> 4
                             <input type="radio" name="answer">
@@ -120,16 +120,12 @@
                 </div>
                 <p>
                     <label>
-                        Send copy to my email <br>
-                        <input type="email">
+                        We'll send copy to your email <br>
+                        <input type="email" name="email" placeholder="lostsoul@example.com" required>
                     </label>
                 </p>
-                <p>
-                    <label>
+                <button type="submit">Show my reading!</button>
 
-                        <input type="submit">
-                    </label>
-                </p>
             </fieldset>
         </form>
 
