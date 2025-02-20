@@ -21,7 +21,6 @@ body {
 
 .header {
   background-color: #444444;
-  /* Dark background */
   padding: 30px;
   margin: 0;
   display: flex;
@@ -30,7 +29,6 @@ body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Navigation links */
 .desktop-nav ul li {
   display: inline-block;
   transform-origin: left center;
@@ -44,7 +42,6 @@ body {
   transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* Hover effect */
 .desktop-nav ul li a:hover {
   background-color: gold;
   color: black;
@@ -57,7 +54,6 @@ body {
   cursor: pointer;
 }
 
-/* Show hamburger on small screens */
 @media (max-width: 768px) {
   .desktop-nav {
     display: none;
@@ -127,14 +123,12 @@ legend {
   display: block;
   position: relative;
   padding-left: 30px;
-  /* Ensure space for custom radio */
   margin: 10px 5px;
   font-size: 16px;
   user-select: none;
   cursor: pointer;
 }
 
-/* Hide the default radio button */
 .radiobutton-container input {
   position: absolute;
   opacity: 0;
@@ -143,7 +137,6 @@ legend {
   width: 0;
 }
 
-/* Custom radio button */
 .custom-radio {
   position: absolute;
   top: 0;
@@ -157,18 +150,15 @@ legend {
   transition: background-color 0.3s;
 }
 
-/* Change color on hover */
 .radiobutton-container:hover .custom-radio {
   background-color: #ccc;
 }
 
-/* When selected, change color */
 .radiobutton-container input:checked+.custom-radio {
   background-color: #444444;
   border: 2px solid blue;
 }
 
-/* Inner dot for checked radio */
 .custom-radio:after {
   content: "";
   position: absolute;
@@ -181,12 +171,10 @@ legend {
   display: none;
 }
 
-/* Show inner dot when checked */
 .radiobutton-container input:checked+.custom-radio:after {
   display: block;
 }
 
-/* Add focus outline */
 .radiobutton-container input:focus+.custom-radio {
   outline: #333 auto 4px;
 }
@@ -241,7 +229,6 @@ button {
   color: pink;
 }
 
-/* Tarot Spread - Grid */
 .tarot-spread {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -250,17 +237,14 @@ button {
   max-width: 1200px;
   margin: auto;
   justify-items: center;
-  /* Center all cards horizontally */
 }
 
-/* Tablet: 2 Columns */
 @media (max-width: 1024px) {
   .tarot-spread {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile: 1 Column */
 @media (max-width: 600px) {
   .tarot-spread {
     grid-template-columns: 1fr;
@@ -319,7 +303,6 @@ button {
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 12px 24px rgba(255, 215, 0, 0.6);
-  /* Glowing effect on hover */
 }
 
 .card:hover .card-description {
@@ -330,7 +313,6 @@ button {
   font-size: 1.8rem;
   margin-top: 10px;
   color: gold;
-  /* Gold for the card titles */
 }
 
 .card p {
@@ -341,20 +323,17 @@ button {
 
 .headline {
   background-image: url("heroimage.png");
-  /* Change path if needed */
   height: 60vh;
   background-size: cover;
   background-position: center;
   width: 100%;
   background-color: red;
-  /* Just in case image fails */
 }
 
 .site-footer {
   padding-left: 20px !important;
 }
 
-/* Mobile Nav - Hidden by Default */
 .mobile-nav {
   display: none;
   flex-direction: column;
@@ -367,10 +346,8 @@ button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   padding: 10px;
   z-index: 1000;
-  /* Ensures menu is above other content */
 }
 
-/* Ensure it's only shown when toggled */
 .mobile-nav.active {
   display: flex;
 }
@@ -395,12 +372,10 @@ button {
   border-radius: 5px;
 }
 
-/* Show Menu When Active */
 .mobile-nav.active {
   display: flex;
 }
 
-/* Adjust Hamburger Button for Mobile */
 .hamburger-menu {
   display: none;
   font-size: 2rem;
@@ -414,7 +389,6 @@ button {
   border-radius: 5px;
 }
 
-/* Show hamburger only on mobile */
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;
